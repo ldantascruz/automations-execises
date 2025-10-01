@@ -1,3 +1,5 @@
+## Gerador de Exercícios de Matemática estilo Kumon
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
