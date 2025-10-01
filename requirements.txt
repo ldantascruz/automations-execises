@@ -1,2 +1,4 @@
 Flask>=2.0
 reportlab>=3.0
+google-generativeai>=0.8.5
+load-dotenv>=0.1.0
