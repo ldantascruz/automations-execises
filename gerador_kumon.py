@@ -306,7 +306,7 @@ def main():
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         arquivos_gerados = []
 
-        pasta_principal = "Exercicios"
+        pasta_principal = "exercicios"
         pasta_operacao = os.path.join(pasta_principal, tipo)
         os.makedirs(pasta_operacao, exist_ok=True) # Cria as pastas se não existirem
 

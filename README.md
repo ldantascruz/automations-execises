@@ -36,6 +36,35 @@ Uma automação completa para gerar exercícios de matemática no estilo Kumon, 
 - **Validações:** Garante resultados positivos e divisões exatas
 - **Organização:** Numeração sequencial e espaçamento adequado para resolução
 
+### 2. 🧾 Gerador de Recibos de Prestação de Serviço
+
+**Arquivo:** `gerar_recibo.py`
+
+Uma automação completa para gerar recibos de prestação de serviços com formatação profissional, disponível em modo individual ou em lote.
+
+#### 📋 Funcionalidades Principais
+- **Geração Individual:** Cria recibos personalizados para clientes específicos
+- **Geração em Lote:** Gera automaticamente recibos para todos os 4 clientes cadastrados
+- **Geração Consolidada:** Cria um único recibo com todos os 4 clientes e valor total
+- **Clientes Pré-cadastrados:** Base de dados com 4 clientes e seus respectivos valores
+- **Prestador Padrão:** Configuração pré-definida do prestador de serviços
+- **Numeração Sequencial:** Sistema automático de numeração de recibos
+- **Múltiplos Formatos:** Exportação em TXT e PDF
+- **Impressão Automática:** Integração com sistema de impressão (macOS)
+
+#### 👥 Clientes Cadastrados
+1. **Lucas Lago Borges** - CPF: 041.909.035-59 - R$ 1.578,71
+2. **Tiago Martin Rodrigues** - CPF: 801.796.225-87 - R$ 701,65
+3. **Daniel Lago Araujo** - CPF: 054.136.675-07 - R$ 701,65
+4. **Paulo Roberto Aziz Yokoshiro** - CPF: 394.341.335-72 - R$ 526,24
+
+#### ⚙️ Características Técnicas
+- **Formato TXT:** Recibo em texto simples com formatação estruturada
+- **Formato PDF:** Layout profissional usando ReportLab
+- **Validação de Dados:** Verificação automática de CPF e valores
+- **Organização:** Arquivos salvos em pasta dedicada com timestamp
+- **Flexibilidade:** Permite personalização de todos os campos
+
 ## 🚀 Como Usar
 
 ### Pré-requisitos
@@ -61,6 +90,17 @@ python app.py
 # http://[SEU_IP]:5001 (para acesso na rede local)
 ```
 
+### Gerador de Recibos
+```bash
+# Executar o gerador de recibos
+python gerar_recibo.py
+
+# Opções disponíveis:
+# 1 - Gerar recibo individual
+# 2 - Gerar recibos em lote (todos os 4 clientes)
+# 3 - Gerar recibo consolidado (todos os clientes em um único recibo)
+```
+
 ## 📦 Dependências
 
 - **Flask** (>=2.0): Framework web para a versão online
@@ -74,14 +114,23 @@ python app.py
 - **Escolas:** Produzir material didático padronizado
 - **Tutores:** Criar exercícios específicos para diferentes níveis
 
+### Gerador de Recibos
+- **Prestadores de Serviço:** Gerar recibos profissionais rapidamente
+- **Freelancers:** Documentar pagamentos de clientes recorrentes
+- **Pequenas Empresas:** Automatizar emissão de recibos para clientes fixos
+- **Contadores:** Auxiliar clientes na geração de comprovantes de renda
+- **Consultores:** Documentar prestações de serviços de forma padronizada
+- **Consultores:** Recibos consolidados para projetos com múltiplos participantes
+
 ## 📁 Estrutura do Projeto
 
 ```
 Automator/
 ├── README.md              # Este arquivo
 ├── requirements.txt       # Dependências Python
-├── gerador_kumon.py      # Versão terminal do gerador
-├── app.py                # Versão web do gerador
+├── gerador_kumon.py      # Versão terminal do gerador de exercícios
+├── app.py                # Versão web do gerador de exercícios
+├── gerar_recibo.py       # Gerador de recibos de prestação de serviço
 └── .gitignore           # Arquivos ignorados pelo Git
 ```
 
